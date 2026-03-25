@@ -1,6 +1,98 @@
-# Bem vindo ao meu primeiro Site
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peças para PCs Gamers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="intro">
+        <div class="intro-content">
+            <h1 class="fade-in">Bem-vindo à Loja de Peças para PCs Gamers</h1>
+            <p class="fade-in-delay">Descubra os melhores componentes para seu setup gamer.</p>
+            <button onclick="enterSite()" class="enter-btn">Entrar no Site</button>
+        </div>
+    </div>
+    <div id="main-content">
+    <header>
+        <h1>Loja de Peças para PCs Gamers</h1>
+        <p>Engenheiro Henry</p>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showIntro()">Home</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main id="home">
+        <h2>Bem-vindo à Nossa Loja</h2>
+        <p>Encontre as melhores peças para montar ou atualizar seu PC gamer. Explore nossa seleção de componentes de alta performance.</p>
+        <p>Comece navegando pelos produtos abaixo ou entre em contato conosco.</p>
+    </main>
 
-Desenvolvi um site de e-commerce utilizando HTML, CSS e JavaScript, simulando uma loja de peças para computadores gamers.
-O projeto inclui listagem de produtos, seleção de quantidade e funcionalidade de carrinho de compras.
-Focado em prática de front-end e manipulação de DOM.
+    <section id="produtos">
+        <h2>Produtos em Destaque</h2>
+        <article>
+            <h3>Processador Intel Core i7-13700K</h3>
+            <p>Processador de alto desempenho para jogos e multitarefas. 16 núcleos, 24 threads.</p>
+            <p>Preço: R$ 2.500,00</p>
+            <label for="qty1">Quantidade:</label>
+            <input type="number" id="qty1" min="1" value="1">
+            <button onclick="addToCart('Processador Intel Core i7-13700K', 2500.00, 'qty1')">Adicionar ao Carrinho</button>
+        </article>
+        <article>
+            <h3>Placa de Vídeo NVIDIA RTX 4070</h3>
+            <p>Gráficos de última geração para jogos em 4K. 12GB GDDR6X.</p>
+            <p>Preço: R$ 3.200,00</p>
+            <label for="qty2">Quantidade:</label>
+            <input type="number" id="qty2" min="1" value="1">
+            <button onclick="addToCart('Placa de Vídeo NVIDIA RTX 4070', 3200.00, 'qty2')">Adicionar ao Carrinho</button>
+        </article>
+        <article>
+            <h3>Memória RAM Corsair Vengeance 32GB DDR4</h3>
+            <p>Kit de 2x16GB, 3200MHz, ideal para jogos e edição.</p>
+            <p>Preço: R$ 450,00</p>
+            <label for="qty3">Quantidade:</label>
+            <input type="number" id="qty3" min="1" value="1">
+            <button onclick="addToCart('Memória RAM Corsair Vengeance 32GB DDR4', 450.00, 'qty3')">Adicionar ao Carrinho</button>
+        </article>
+        <article>
+            <h3>SSD Samsung 970 EVO 1TB</h3>
+            <p>Armazenamento rápido NVMe para tempos de carregamento reduzidos.</p>
+            <p>Preço: R$ 600,00</p>
+            <label for="qty4">Quantidade:</label>
+            <input type="number" id="qty4" min="1" value="1">
+            <button onclick="addToCart('SSD Samsung 970 EVO 1TB', 600.00, 'qty4')">Adicionar ao Carrinho</button>
+        </article>
+        <article>
+            <h3>Notebook Acer Nitro V15</h3>
+            <p>Notebook gamer com processador Intel Core i7, RTX 4060, 16GB RAM e 512GB SSD.</p>
+            <p>Preço: R$ 5.000,00</p>
+            <label for="qty6">Quantidade:</label>
+            <input type="number" id="qty6" min="1" value="1">
+            <button onclick="addToCart('Notebook Acer Nitro V15', 5000.00, 'qty6')">Adicionar ao Carrinho</button>
+        </article>
+    </section>
+
+    <section id="carrinho">
+        <h2>Carrinho de Compras</h2>
+        <div id="cart-items">Nenhum item no carrinho.</div>
+        <p>Total: R$ <span id="total">0.00</span></p>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Email: contato@pecasgamers.com</p>
+        <p>Telefone: (11) 1234-5678</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Loja de Peças para PCs Gamers. Todos os direitos reservados.</p>
+    </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
