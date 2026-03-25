@@ -1,5 +1,6 @@
-# Welcome to GitHub Desktop!
+# Bem vindo ao meu primeiro Site
 
-This is your README. READMEs are where you can communicate what your project is and how to use it.
 
-Write your name on line 6, save it, and then head back to GitHub Desktop.
+Desenvolvi um site de e-commerce utilizando HTML, CSS e JavaScript, simulando uma loja de peças para computadores gamers.
+O projeto inclui listagem de produtos, seleção de quantidade e funcionalidade de carrinho de compras.
+Focado em prática de front-end e manipulação de DOM.
