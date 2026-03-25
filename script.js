@@ -1,16 +1,1 @@
-let cart = []; 
-function addToCart(name, price, qtyId) { 
-    const qty = parseInt(document.getElementById(qtyId).value); 
-    if (qty > 0) { 
-        cart.push({ name, price, qty }); 
-        updateCart(); 
-    } 
-}
-function updateCart() { 
-    const cartDiv = document.getElementById('cart-items'); 
-    let total = 0; 
-    cartDiv.innerHTML = ''; 
-    cart.forEach((item, index) => { 
-        const itemTotal = item.price * item.qty; 
-        total += itemTotal; 
-        cartDiv.innerHTML += `<p>${item.name} - Qtd: ${item.qty} - R$ ${itemTotal.toFixed(2)} <button onclick=\
+let cart = [];\n\nfunction addToCart(name, price, qtyId) {\n    const qty = parseInt(document.getElementById(qtyId).value);\n    if (qty > 0) {\n        cart.push({ name, price, qty });\n        updateCart();\n    }\n}\n\nfunction updateCart() {\n    const cartDiv = document.getElementById('cart-items');\n    let total = 0;\n    cartDiv.innerHTML = '';\n    cart.forEach((item, index) => {\n        const itemTotal = item.price * item.qty;\n        total += itemTotal;\n        cartDiv.innerHTML += `<p>${item.name} - Qtd: ${item.qty} - R$ ${itemTotal.toFixed(2)} <button onclick=\"removeFromCart(${index})\">Remover</button></p>`;\n    });\n    if (cart.length === 0) {\n        cartDiv.innerHTML = 'Nenhum item no carrinho.';\n    }\n    document.getElementById('total').textContent = total.toFixed(2);\n}\n\nfunction removeFromCart(index) {\n    cart.splice(index, 1);\n    updateCart();\n}\n\nfunction enterSite() {\n    document.getElementById('intro').style.display = 'none';\n    document.getElementById('main-content').style.display = 'block';\n}\n\nfunction showIntro() {\n    document.getElementById('intro').style.display = 'flex';\n    document.getElementById('main-content').style.display = 'none';\n}
