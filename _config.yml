@@ -2,7 +2,7 @@
 title: "Loja de Peças para PCs Gamers"
 description: "Descubra os melhores componentes para seu setup gamer."
 url: "https://carlos2007henrique.github.io"
-baseurl: ""
+baseurl: "/primeiro---Site"
 
 # Build settings
 markdown: kramdown
