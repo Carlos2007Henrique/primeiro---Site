@@ -1,15 +1,5 @@
-// Updated innerHTML manipulation for improved security and performance
+let cart = [];
 
-<<<<<<<< HEAD:primeiro-site/script.js
-function updateContent() {
-    const contentElement = document.getElementById('content');
-    // Using textContent to prevent XSS vulnerabilities
-    contentElement.textContent = 'New content loaded securely.';
-}
-
-// Call the updateContent function on page load
-document.addEventListener('DOMContentLoaded', updateContent);
-========
 function enterSite() {
     document.getElementById('intro').style.display = 'none';
     document.getElementById('main-content').style.display = 'block';
@@ -52,4 +42,3 @@ function removeFromCart(index) {
     cart.splice(index, 1);
     updateCart();
 }
->>>>>>>> primeiro-Site:script.js
