@@ -15,13 +15,11 @@ Bem-vindo à Loja de Peças para PCs Gamers! Este é um site simples e responsiv
 - **HTML5**: Estrutura do site.
 - **CSS3**: Estilos, animações e responsividade.
 - **JavaScript**: Funcionalidades interativas (carrinho, navegação).
-- **Jekyll**: Para build e hospedagem no GitHub Pages.
 
 ## Como Usar
 
 1. Clone o repositório: `git clone https://github.com/Carlos2007Henrique/primeiro---Site.git`
-2. Abra `index.html` no navegador ou use Jekyll para build.
-3. Para desenvolvimento local: Instale Jekyll e rode `jekyll serve`.
+2. Abra `index.html` no navegador.
 
 ## Deploy
 
