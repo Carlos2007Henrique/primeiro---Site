@@ -94,5 +94,19 @@
     </footer>
     </div>
     <script src="script.js"></script>
+    <!-- Add this script block before the closing </body> tag -->
+    <script>
+        function enterSite() {
+            // Hide the intro div and show the main content
+            document.getElementById('intro').style.display = 'none';
+            document.getElementById('main-content').style.display = 'block';
+        }
+
+        function showIntro() {
+            // Show the intro div and hide the main content
+            document.getElementById('intro').style.display = 'flex';
+            document.getElementById('main-content').style.display = 'none';
+        }
+    </script>
 </body>
 </html>
